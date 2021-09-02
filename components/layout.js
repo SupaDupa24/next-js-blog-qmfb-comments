@@ -1,7 +1,7 @@
 import Alert from '../components/alert'
 import Footer from '../components/footer'
 import Meta from '../components/meta'
-import Particles from 'react-particles-js'
+import Particles from 'react-tsparticles'
 import particlesOptions from '../components/particles'
 
 export default function Layout({ preview, children }) {
@@ -9,7 +9,7 @@ export default function Layout({ preview, children }) {
     <>
       <Meta />
       <div className="min-h-screen">
-      <Particles params={{particlesOptions}} />
+      <Particles options={{particlesOptions}} />
         <main>{children}</main>
       </div>
       <Footer />
