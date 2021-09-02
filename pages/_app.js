@@ -6,7 +6,7 @@ import particlesOptions from '../components/particles'
 function MyApp({ Component, pageProps }) {
   return 
   <React.Fragment>
-    <Particles params={particlesOptions} />
+    <Particles params={{particlesOptions}} />
     <Component {...pageProps} />
   </React.Fragment>
 }
