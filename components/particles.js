@@ -1,4 +1,4 @@
-const particlesOptions = {{
+export const particlesOptions = {{
         id="tsparticles"
         init={this.particlesInit}
         loaded={this.particlesLoaded}

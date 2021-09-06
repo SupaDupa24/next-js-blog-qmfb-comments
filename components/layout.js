@@ -2,7 +2,8 @@ import Alert from '../components/alert'
 import Footer from '../components/footer'
 import Meta from '../components/meta'
 import Particles from 'react-tsparticles'
-import particlesOptions from '../components/particles'
+import particleOptions from './particles'
+
 
 export default function Layout({ preview, children }) {
   return (
