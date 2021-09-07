@@ -8,3 +8,8 @@ article a {
 /* purgecss end ignore */
 @tailwind utilities;
 
+
+* {
+    color:ghostwhite;
+    background-color: black;
+}
