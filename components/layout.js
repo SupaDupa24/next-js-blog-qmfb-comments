@@ -10,7 +10,7 @@ export default function Layout({ preview, children }) {
     <>
       <Meta />
       <div className="min-h-screen">
-      <Particles options={{particlesOptions}} />
+      <Particles options={particlesOptions} />
         <main>{children}</main>
       </div>
       <Footer />
