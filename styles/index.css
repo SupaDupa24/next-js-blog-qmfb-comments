@@ -5,11 +5,12 @@ article a {
     color: rgb(49, 49, 182);
     text-decoration: underline;
 }
-/* purgecss end ignore */
-@tailwind utilities;
-
-
 * {
     color:ghostwhite;
     background-color: black;
 }
+
+/* purgecss end ignore */
+@tailwind utilities;
+
+
