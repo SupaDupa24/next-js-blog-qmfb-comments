@@ -1,87 +1,75 @@
-export const particlesOptions = {{
-        id="tsparticles"
-        init={this.particlesInit}
-        loaded={this.particlesLoaded}
-        options={{
-          background: {
-            color: {
-              value: "#0d47a1",
-            },
-          },
-          fpsLimit: 60,
-          interactivity: {
-            detectsOn: "canvas",
-            events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
-              onHover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
-            },
-            modes: {
-              bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 0.8,
-                size: 40,
-              },
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outMode: "bounce",
-              random: false,
-              speed: 6,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-              value: 80,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              random: true,
-              value: 5,
-            },
-          },
-          detectRetina: true,
-			}}
-		}
-	}
-	
-
-	
+export const particlesOptions = {
+  fullScreen: {
+  enable: true
+},
+detectRetina: true,
+background: {
+  color: "#000"
+},
+fpsLimit: 60,
+emitters: {
+  direction: "top",
+  life: {
+    count: 0,
+    duration: 0.08,
+    delay: 0.1
+  },
+  rate: {
+    delay: 0.15,
+    quantity: 1
+  },
+  size: {
+    width: 100,
+    height: 0
+  },
+  position: {
+    y: 100,
+    x: 50
+  }
+},
+particles: {
+  number: {
+    value: 0
+  },
+  life: {
+    count: 1
+  },
+  shape: {
+    type: "line"
+  },
+  size: {
+    value: 50,
+    animation: {
+      enable: true,
+      sync: true,
+      speed: 1,
+      startValue: "max",
+      destroy: "min"
+    }
+  },
+  stroke: {
+    color: {
+      value: "#ffffff"
+    },
+    width: 1
+  },
+  rotate: {
+    path: true,
+    value: 180
+  },
+  move: {
+    straight: true,
+    enable: true,
+    speed: { min: 10, max: 20 },
+    outModes: {
+      default: "destroy",
+      top: "none"
+    },
+    trail: {
+      fillColor: "#000",
+      enable: true,
+      length: 3
+    }
+  }
+}
+}
