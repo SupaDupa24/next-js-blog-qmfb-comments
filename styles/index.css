@@ -9,6 +9,9 @@ article a {
     color:ghostwhite;
     background-color: black;
 }
+main {
+    background-color: black;
+}
 
 /* purgecss end ignore */
 @tailwind utilities;
